@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    width: 98%;
+    height:96%;
+    position: absolute;
+    border: 12px solid transparent;
+    border-image:linear-gradient(0deg,rgb(113, 201, 233),#f0f);
+    border-image-slice: 1;
+}
+header
+{
+    margin:30px;
+    padding:25px;
+    width:92%;
+    height: 7%;
+    border:1px solid black;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.flexing
+{
+    display: flex;
+}
+.small {
+    margin:1%;
+    width:20%;
+    padding:25px;
+    height: 55px;
+    border:1px solid black;
+    border-radius:5px;
+    transform: translate(20px,125px);
+}
+.small2{
+    margin:1%;
+    width:20%;
+    padding:25px;
+    height: 55px;
+    border-radius:5px;
+    transform: translate(20px,125px);
+    border:2px solid blue;
+}
+.nav{
+    position: absolute;
+    margin:1%;
+    width:15%;
+    padding:25px;
+    height: 65%;
+    border:1px solid black;
+    border-radius:5px;
+    transform: translate(1060px,-9px);
+}
+.main{
+    position: absolute;
+    margin: 1%;
+    padding:25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width:71%;
+    height: 20%;
+    transform: translate(20px,120px);
+}
+.flexing2{
+    display: flex;
+}
+.flexing2 > div{
+    margin:1%;
+    width:32%;
+    padding:30px;
+    height: 75px;
+    border:1px solid black;
+    border-radius:5px;  
+    transform: translate(20px,310px);
+}
+@media screen and (max-width:300px) {
+    .nav,.main, .flexing, .flexing2 {
+      width:100%; 
+    }
+}
